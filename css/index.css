@@ -41,17 +41,3 @@ body {
 .about-us-wrapper {
     background: linear-gradient(90deg, #212626 50%, #498C4D 50%);
 }
-
-.green-button {
-    color: #fff;
-    background-color: #498C4D;
-    text-decoration: none;
-    border: 1px solid #498C4D;
-}
-
-.green-button:hover {
-    color: #fff;
-    background-color: #246308;
-    text-decoration: none;
-    border: 1px solid #246308;
-}

@@ -8,3 +8,41 @@
 .display-on{
     display: block;
 }
+
+.categorie-indoor-list, 
+.categorie-outdoor-list,
+.categorie-accessories-list{
+    background-color: #9FBFA7;
+}
+
+html{
+    color: #212626;
+}
+.btn-sm{
+    color: #212626;
+    background-color: #C3D996;
+}
+
+.btn-sm:hover{
+    color: #fff;
+    background-color: #498C4D;
+    text-decoration: none;
+}
+
+.btn-indoor,
+.btn-outdoor,
+.btn-accessories{
+    color: #fff;
+    background-color: #498C4D;
+    text-decoration: none;
+    border: 1px solid #498C4D;
+}
+
+.btn-indoor:hover,
+.btn-outdoor:hover,
+.btn-accessories:hover{
+    color: #fff;
+    background-color: #246308;
+    text-decoration: none;
+    border: 1px solid #246308;
+}

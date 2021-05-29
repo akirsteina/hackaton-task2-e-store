@@ -1,3 +1,9 @@
+/* hide horizontal scrollbar */
+
+body {
+    overflow-x: hidden;
+}
+
 .hero-img-container {
     background-image: url("../images/hero-image.jpg");
     background-size: cover;
@@ -5,9 +11,6 @@
     padding: 0px;
 }
 
-
-/* hide horizontal scrollbar */
-
-body {
-    overflow-x: hidden;
+.company-title {
+    font-family: 'Raleway', sans-serif;
 }

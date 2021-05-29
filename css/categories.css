@@ -1,3 +1,10 @@
 .card-footer{
     border-top: none;
 }
+
+.display-off{
+    display: none;
+}
+.display-on{
+    display: block;
+}

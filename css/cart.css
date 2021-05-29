@@ -1,11 +1,3 @@
-.company-title {
-    font-family: 'Satisfy', cursive;
-}
-
-#navbar-company-title {
-    font-size: 30px;
-}
-
 .list-group-item {
     min-height: 150px;
 }
@@ -35,4 +27,27 @@ input[type=number] {
 
 .cart-img {
     max-width: 150px;
+}
+
+.breadcrumb a:visited {
+    color: #212626;
+    text-decoration: none;
+}
+
+.hidden {
+    display: none;
+}
+
+.green-button {
+    color: #fff;
+    background-color: #498C4D;
+    text-decoration: none;
+    border: 1px solid #498C4D;
+}
+
+.green-button:hover {
+    color: #fff;
+    background-color: #246308;
+    text-decoration: none;
+    border: 1px solid #246308;
 }

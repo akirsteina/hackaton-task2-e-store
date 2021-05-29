@@ -31,7 +31,16 @@
 .h4cc {
     color:#498C4D;
 }
+
 .btn-atc{
-    background-color:#498C4D;
+    color: #212626;
+    background-color: #C3D996;
+    border:#C3D996
+}
+
+.btn-atc:hover{
+    color: #fff;
+    background-color: #498C4D;
+    text-decoration: none;
     border: #498C4D;
 }

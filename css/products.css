@@ -45,11 +45,11 @@
     border: #498C4D;
 }
 .modal-footer a:link{
-    text-decoration:#498C4D;
+    color:#498C4D;
     text-decoration: none;
 }
 .modal-footer a:visited{
-    text-decoration:#498C4D;
+    color:#498C4D;
     text-decoration: none;
 }
 .cart {

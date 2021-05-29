@@ -38,16 +38,11 @@ input[type=number] {
     display: none;
 }
 
-.green-button {
-    color: #fff;
-    background-color: #498C4D;
+.cart-link:hover {
     text-decoration: none;
-    border: 1px solid #498C4D;
+    color: #428C20;
 }
 
-.green-button:hover {
-    color: #fff;
-    background-color: #246308;
-    text-decoration: none;
-    border: 1px solid #246308;
+.cart-link {
+    color: #212626;
 }

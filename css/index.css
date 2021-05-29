@@ -4,24 +4,6 @@ body {
     overflow-x: hidden;
 }
 
-
-/* navbar */
-
-.company-title {
-    font-family: 'Satisfy', cursive;
-}
-
-#navbar-company-title {
-    font-size: 30px;
-}
-
-
-/* footer */
-
-footer {
-    color: #498C4D;
-}
-
 .hero-img-container {
     background-image: url("../images/hero-image.jpg");
     background-size: cover;

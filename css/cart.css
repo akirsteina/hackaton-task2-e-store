@@ -1,0 +1,34 @@
+.company-title {
+    font-family: 'Satisfy', cursive;
+}
+
+#navbar-company-title {
+    font-size: 20px;
+}
+
+.list-group-item {
+    min-height: 150px;
+}
+
+.list-group-item.header {
+    min-height: 15px;
+    background: none;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+.center {
+    width: 150px;
+    margin: 40px auto;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}

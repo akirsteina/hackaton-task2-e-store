@@ -1,0 +1,13 @@
+.hero-img-container {
+    background-image: url("../images/hero-image.jpg");
+    background-size: cover;
+    height: 90vh;
+    padding: 0px;
+}
+
+
+/* hide horizontal scrollbar */
+
+body {
+    overflow-x: hidden;
+}

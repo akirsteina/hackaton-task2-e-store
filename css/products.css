@@ -44,3 +44,11 @@
     text-decoration: none;
     border: #498C4D;
 }
+.modal a:link{
+    text-decoration:#498C4D;
+    text-decoration: none;
+}
+.modal a:visited{
+    text-decoration:#498C4D;
+    text-decoration: none;
+}

@@ -12,5 +12,25 @@ body {
 }
 
 .company-title {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Satisfy', cursive;
+}
+
+#navbar-company-title {
+    font-size: 20px;
+}
+
+.btn.company-title {
+    font-size: 40px;
+}
+
+.stars {
+    color: #ffc700;
+}
+
+#map {
+    height: 100%;
+}
+
+.about-us-wrapper {
+    background: linear-gradient(90deg, #212626 50%, #498C4D 50%);
 }

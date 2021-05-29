@@ -1,28 +1,61 @@
 // minus total quantity
 $('.btn-minus').on('click', function() {
-    if ($('#quantity').val() <= 1) {
+    const quantity = $(this).parentsUntil(".col").find('.quantity').val();
+    if (quantity <= 1) {
         return;
     }
-    $(this).parent().siblings('input').val(parseInt($(this).parent().siblings('input').val()) - 1)
-    updateSingleProductTotal();
+    $(this).parent().siblings('input').val(parseInt($(this).parent().siblings('input').val()) - 1);
+
+    // update single product total
+    const singlePrice = $(this).parentsUntil(".cart-item").find('.single-price').html();
+    let newSingleTotal = countSingleProductTotal(singlePrice, quantity - 1);
+    $(this).parentsUntil(".cart-item").find('.total-price').html(newSingleTotal);
+
+    // update total cart value
+    countTotal();
+
 });
 
 
 // plus total quantity
 $('.btn-pluss').on('click', function() {
-    if ($('#quantity').val() >= 5) {
+    const quantity = $(this).parentsUntil(".col").find('.quantity').val();
+    if (quantity >= 5) {
         return;
     }
-    $(this).parent().siblings('input').val(parseInt($(this).parent().siblings('input').val()) + 1)
+    $(this).parent().siblings('input').val(parseInt($(this).parent().siblings('input').val()) + 1);
+
+    // update single product total
+    const singlePrice = $(this).parentsUntil(".cart-item").find('.single-price').html();
+    const newQuantity = parseInt(quantity) + 1;
+    let newSingleTotal = countSingleProductTotal(singlePrice, newQuantity);
+    $(this).parentsUntil(".cart-item").find('.total-price').html(newSingleTotal);
+
+    // update total cart value
+    countTotal();
 });
+
+
+// calculate total price for single product
+const countSingleProductTotal = (value, quantity) => {
+    return newValue = (value * quantity).toPrecision(4);
+};
+
+const countTotal = () => {
+    let total = 0;
+    $('.total-price').each(function() {
+        total += parseFloat($(this).html());
+    });
+    $('.total-price-all').html(total.toPrecision(4));
+};
 
 // remove cart element
 $('.remove-button').on('click', function() {
-    console.log('yay');
     $(this).parentsUntil("ul").remove();
+    countTotal();
+    let cartItemsCount = -1;
+    $('li').each(function(index) {
+        cartItemsCount += 1;
+    });
+    $('.cart-items-count').html(cartItemsCount);
 });
-
-// calculate total price for single product
-const updateSingleProductTotal = () => {
-    $(this).
-};

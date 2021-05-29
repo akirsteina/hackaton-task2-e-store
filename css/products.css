@@ -6,3 +6,5 @@
 .price {color:#428C20; text-align: center;}
 .addcart {align-content: flex-end;}
 .cart {align-items: flex-end;}
+.btn-black {background-color: black;}
+.btn-white {background-color: white;}

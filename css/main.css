@@ -1,0 +1,34 @@
+/* add these in head of your html files */
+
+
+/* 
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet"> 
+*/
+
+
+/* navbar */
+
+.company-title {
+    font-family: 'Satisfy', cursive;
+}
+
+.navbar-company-title {
+    font-size: 30px;
+}
+
+.navbar-shop-title {
+    font-size: 20px;
+}
+
+.navbar-link:hover {
+    text-decoration: none;
+    color: #498C4D;
+}
+
+
+/* footer */
+
+footer {
+    color: #498C4D;
+}

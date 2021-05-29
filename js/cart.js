@@ -1,6 +1,6 @@
 // minus total quantity
 $('.btn-minus').on('click', function() {
-    const quantity = $(this).parentsUntil(".col").find('.quantity').val();
+    const quantity = $(this).parentsUntil(".counter-element").find('.quantity').val();
     if (quantity <= 1) {
         return;
     }
@@ -19,7 +19,7 @@ $('.btn-minus').on('click', function() {
 
 // plus total quantity
 $('.btn-pluss').on('click', function() {
-    const quantity = $(this).parentsUntil(".col").find('.quantity').val();
+    const quantity = $(this).parentsUntil(".counter-element").find('.quantity').val();
     if (quantity >= 5) {
         return;
     }
@@ -53,9 +53,14 @@ const countTotal = () => {
 $('.remove-button').on('click', function() {
     $(this).parentsUntil("ul").remove();
     countTotal();
-    let cartItemsCount = -1;
-    $('li').each(function(index) {
+    let cartItemsCount = 0;
+    $('.cart-element').each(function() {
         cartItemsCount += 1;
     });
     $('.cart-items-count').html(cartItemsCount);
+
+    if (cartItemsCount === 0) {
+        $("#empty-cart").removeClass("hidden");
+        $("#cart-header").addClass("hidden");
+    }
 });

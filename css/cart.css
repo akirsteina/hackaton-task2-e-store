@@ -3,7 +3,7 @@
 }
 
 #navbar-company-title {
-    font-size: 20px;
+    font-size: 30px;
 }
 
 .list-group-item {
@@ -31,4 +31,8 @@ input::-webkit-inner-spin-button {
 
 input[type=number] {
     -moz-appearance: textfield;
+}
+
+.cart-img {
+    max-width: 150px;
 }

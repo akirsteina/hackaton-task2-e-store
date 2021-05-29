@@ -115,24 +115,57 @@
                             <h2 class="price">20.99</h2>
                         </div>
                         <div class="col cart">
-                            <button class="addcart">Add to cart</button>
+
+
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                Add to cart
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Product added</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            You have added your product to the cart
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-1"><a href="categories.html">Continue shopping</a></button>
+                                            <button type="button" class="btn btn-2"><a href="categories.html">Go to cart</a></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
                         </div>
                     </div>
                 </div>
                 <!-- text -->
                 <div class="col-8 article_text_full">
-                    <p>Weeping fig (also known as the ficus tree) grows as a large broadleaf evergreen tree in tropical
-                        and subtropical climates, but it is more often grown as a houseplant in homes and offices and is
+                    <p>Weeping fig (also known as the ficus tree) grows as a large broadleaf evergreen tree in
+                        tropical
+                        and subtropical climates, but it is more often grown as a houseplant in homes and offices
+                        and is
                         a popular feature in interior commercial landscaping. It is a rare tree that has a good
                         tolerance for the limited light conditions of indoor environments.
                     </p>
                     <p>Weeping fig is an elegant plant with slender branches that arch gracefully from a light gray
                         trunk, with dense, glossy dark leaves that may shed when the plant is stressed.
                     </p>
-                    <p> Weeping fig is one of the best plants for improving air quality indoors. It has one of the top
+                    <p> Weeping fig is one of the best plants for improving air quality indoors. It has one of the
+                        top
                         removal rates for air toxins such as formaldehyde, benzene, and trichloroethylene. Move a
                         weeping fig plant to a new pot in early spring, whether you're giving a new plant a more
-                        permanent home or repotting an existing plant. It is a fast grower and may need to be repotted
+                        permanent home or repotting an existing plant. It is a fast grower and may need to be
+                        repotted
                         up to once per year.
 
                     </p>
@@ -197,7 +230,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
         crossorigin="anonymous"></script>
-    <script src="JS/main.js"></script>
+    <script src="js/products.js"></script>
 </body>
 
 </html>

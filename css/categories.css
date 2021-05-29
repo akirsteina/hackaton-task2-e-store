@@ -46,3 +46,23 @@ html{
     text-decoration: none;
     border: 1px solid #246308;
 }
+
+.quote{
+    background-color: rgba(159, 191, 167, 0.5);
+    border: 1px rgba(159, 191, 167, 0.5);
+    border-radius: 10px;
+}
+
+.btn-back{
+    color: #212626;
+    background-color: #fff;
+    border: 1px rgba(221, 226, 222, 0.5);
+    text-decoration: none;
+}
+
+.btn-back:hover{
+    color: #fff;
+    background-color: #246308;
+    border: 1px rgba(221, 226, 222, 0.5);
+    text-decoration: none;
+}

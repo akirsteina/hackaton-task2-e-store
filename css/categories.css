@@ -1,29 +1,31 @@
-.card-footer{
+.card-footer {
     border-top: none;
 }
 
-.display-off{
+.display-off {
     display: none;
 }
-.display-on{
+
+.display-on {
     display: block;
 }
 
-.categorie-indoor-list, 
+.categorie-indoor-list,
 .categorie-outdoor-list,
-.categorie-accessories-list{
+.categorie-accessories-list {
     background-color: #9FBFA7;
 }
 
-html{
+html {
     color: #212626;
 }
-.btn-sm{
+
+.btn-sm {
     color: #212626;
     background-color: #C3D996;
 }
 
-.btn-sm:hover{
+.btn-sm:hover {
     color: #fff;
     background-color: #498C4D;
     text-decoration: none;
@@ -31,7 +33,7 @@ html{
 
 .btn-indoor,
 .btn-outdoor,
-.btn-accessories{
+.btn-accessories {
     color: #fff;
     background-color: #498C4D;
     text-decoration: none;
@@ -40,27 +42,27 @@ html{
 
 .btn-indoor:hover,
 .btn-outdoor:hover,
-.btn-accessories:hover{
+.btn-accessories:hover {
     color: #fff;
     background-color: #246308;
     text-decoration: none;
     border: 1px solid #246308;
 }
 
-.quote{
+.quote {
     background-color: rgba(159, 191, 167, 0.5);
     border: 1px rgba(159, 191, 167, 0.5);
     border-radius: 10px;
 }
 
-.btn-back{
+.btn-back {
     color: #212626;
     background-color: #fff;
     border: 1px rgba(221, 226, 222, 0.5);
     text-decoration: none;
 }
 
-.btn-back:hover{
+.btn-back:hover {
     color: #fff;
     background-color: #246308;
     border: 1px rgba(221, 226, 222, 0.5);

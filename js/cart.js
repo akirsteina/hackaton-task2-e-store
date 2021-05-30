@@ -38,15 +38,16 @@ $('.btn-pluss').on('click', function() {
 
 // calculate total price for single product
 const countSingleProductTotal = (value, quantity) => {
-    return newValue = (value * quantity).toPrecision(4);
+    return newValue = (value * quantity).toFixed(2);
 };
 
+// calculate total price for all the products in cart
 const countTotal = () => {
     let total = 0;
     $('.total-price').each(function() {
         total += parseFloat($(this).html());
     });
-    $('.total-price-all').html(total.toPrecision(4));
+    $('.total-price-all').html(total.toFixed(2));
 };
 
 // remove cart element

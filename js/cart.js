@@ -1,5 +1,5 @@
 // minus total quantity
-$('.btn-minus').on('click', function () {
+$('.btn-minus').on('click', function() {
     const quantity = $(this).parentsUntil(".counter-element").find('.quantity').val();
     if (quantity <= 1) {
         return;
@@ -18,7 +18,7 @@ $('.btn-minus').on('click', function () {
 
 
 // plus total quantity
-$('.btn-pluss').on('click', function () {
+$('.btn-pluss').on('click', function() {
     const quantity = $(this).parentsUntil(".counter-element").find('.quantity').val();
     if (quantity >= 5) {
         return;
@@ -43,22 +43,22 @@ const countSingleProductTotal = (value, quantity) => {
 
 const countTotal = () => {
     let total = 0;
-    $('.total-price').each(function () {
+    $('.total-price').each(function() {
         total += parseFloat($(this).html());
     });
     $('.total-price-all').html(total.toPrecision(4));
 };
 
 // remove cart element
-$('.remove-button').on('click', function () {
+$('.remove-button').on('click', function() {
     $(this).parentsUntil("ul").remove();
     countTotal();
     let cartItemsCount = 0;
-    $('.cart-element').each(function () {
+    $('.cart-element').each(function() {
         cartItemsCount += 1;
     });
     $('.cart-items-count').html(cartItemsCount);
-
+    // add a message in browser if cart is empty
     if (cartItemsCount === 0) {
         $("#empty-cart").removeClass("hidden");
         $("#cart-header").addClass("hidden");

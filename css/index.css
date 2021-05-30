@@ -38,6 +38,10 @@ body {
 
 /* about-us */
 
-.about-us-wrapper {
-    background: linear-gradient(90deg, #212626 50%, #498C4D 50%);
+.info-wrapper {
+    background-color: #212626;
+}
+
+.contacts-wrapper {
+    background-color: #498C4D;
 }

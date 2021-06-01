@@ -44,14 +44,14 @@ const countSingleProductTotal = (value, quantity) => {
 // calculate total price for all the products in cart
 const countTotal = () => {
     let total = 0;
-    $('.total-price').each(() => {
+    $('.total-price').each(function() {
         total += parseFloat($(this).html());
     });
     $('.total-price-all').html(total.toFixed(2));
 };
 
 // remove cart element
-$('.remove-button').on('click', () => {
+$('.remove-button').on('click', function() {
     $(this).parentsUntil("ul").remove();
     countTotal();
     let cartItemsCount = 0;
